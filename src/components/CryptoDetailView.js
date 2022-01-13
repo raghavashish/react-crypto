@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom'
-import { HistoricalChart } from './config/api/api'
+import { HistoricalChart } from '../api/api'
 import { Line } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
-import CoinDetail from './modules/CoinDetail';
+import CoinDetail from '../modules/CoinDetail';
 Chart.register(...registerables);
 
 function CryptoDetailView() {

@@ -3,8 +3,8 @@ import axios from 'axios';
 import {Link} from "react-router-dom";
 // import CryptoDetailView from './CryptoDetailView';
 import './styles/styles.css';
-import { CoinList } from './config/api/api';
-import { priceFormatRegex, readableTime } from './utils/helper';
+import { CoinList } from '../api/api';
+import { priceFormatRegex, readableTime } from '../utils/helper';
 
 function CryptoListView() {
   const [coinData, setCoinData] = useState([])
@@ -20,7 +20,7 @@ function CryptoListView() {
   useEffect(() => {
     fetchTopCoins()
   }, [])
-  
+
   if(loading) {
     return (
       <div className='data-loader'>Loading ...</div>

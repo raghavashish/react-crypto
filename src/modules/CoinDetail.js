@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import { useParams } from 'react-router-dom'
-import { SingleCoin } from '../config/api/api'
+import { SingleCoin } from '../api/api'
 import { priceFormatRegex } from '../utils/helper';
 
 function CoinDetail() {
