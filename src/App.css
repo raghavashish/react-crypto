@@ -1,3 +1,7 @@
+body {
+  background: aliceblue;
+  font-family: emoji;
+}
 .App {
   text-align: center;
 }
